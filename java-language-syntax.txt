@@ -1,0 +1,369 @@
+
+-----------------------------------------------
+java language syntax
+-----------------------------------------------
+
+
+------------------------------
+1. project structure
+------------------------------
+
+
+ root
+ |
+ |---------- p1 ( .java / .class )
+ |
+ |
+ |---------- p2
+ |    |
+ |    |---------- p21
+ |
+ |
+ | -- static resources ( e.g .properties / .txt )
+
+
+
+
+------------------------------
+2. file 
+------------------------------
+
+
+PublicTypeName.java
+------------------------------
+|
+| // package declaration ( 1 )  ( optional )
+| // import statements ( n ) ( optional )
+|
+| // public type ( class | interface | enum | annotation ) ( 1 ) ( mandatory )
+| 
+| // default types ( n ) ( optional )
+|
+|-------------------------------
+
+
+
+------------------------------
+3. package  
+------------------------------
+
+why we need ?
+
+    -> to organize code well
+    -> to avoid type name collisions
+
+
+syntax:
+
+
+    package root;
+            root.sub1;
+            root.sub1.sub2;
+
+
+recommended guidelines for package declaration:
+
+
+e.g
+
+    Employee.java --> emp --> EM --> sapinet --> com;
+
+
+    package ctype.cname.pname.mname;
+    package com.sapinet.em.emp;
+
+
+
+
+
+------------------------------
+4. import  
+------------------------------
+
+
+e.g
+
+    root
+    |
+    |  --- p1 ( A.java , B.java )
+    |
+    |  --- p2 ( C.java , D.java )
+    |   |
+    |    |--- p21 ( E.java )
+    |
+    |  --- P3 ( D.java )
+    |
+    |
+
+
+
+    e.g
+
+
+    package p1;
+    import p2.C; // option-2
+    import p2.D; // option-2
+    // or
+    import p2.*;
+    import p2.p21.*;
+    import p3.*;
+    public class A{
+        B b;
+        //p2.C c; // option-1
+        C c; 
+        p3.D d;
+        E e;
+    }
+
+
+
+
+------------------------------
+object & class
+------------------------------
+
+
+what is object ?
+
+
+    --> info,data,attr,prop  ==> State
+    --> func,method,oprn,work ==> Behavior
+    --> addr,reference,pointer,loc ==> Indentify
+
+    obj ==> SBI
+
+
+what is class ?
+
+    obj's blueprint / description of similar objects
+
+
+    
+    class  ----> instances
+    i.e
+
+    from class we can make instance(s)
+
+
+
+------------------------------
+object's concepts / OO
+------------------------------
+
+
+1. Front-End / Interface / Abstraction
+
+    why we need ?
+
+        --> obj should be easy to use/learn by 'dependent'
+        --> for loose coupling b/w dependent & dependency
+
+2. Back-End / Implementation / Encapsulation
+
+    why we need ?
+
+        --> Hide obj's implementation/complexity
+
+3.  Inheritance
+
+    => inherting/re-using common state & behav 
+       from generalized template to specialized template(s)
+
+     why we need ?
+
+     => re-use common state & behav
+     => can extend system with new modules
+
+ 4. Polymophism ( many forms )
+
+     ==> obj should react in different based input &envi
+
+      why we need ?
+
+      => can re-use same object
+      => open & closed principle      
+
+
+
+------------------------------
+5. class
+------------------------------
+
+_______ _________ class Name [extends] BaseClass {
+[public][abstract]           [implements] Interface1,Interface2,...
+[      ][final]        // state definition ( variables )
+        [strictfp]     // constructor(s)
+                       // behavior         ( methods )
+                       // code blocks
+                    
+                       // inner/nested types
+---------------------
+[public]  [static]                 }
+[protected]
+[private]
+[       ]
+
+
+
+
+------------------------------
+6. variables
+------------------------------
+
+
+data types
+
+    1. simple types / primitives ==> values  : by keywords
+    2. complex types / references ==> objects: class | interface | enum | annotation 
+
+
+    e.g
+
+
+    class Employee{
+        final static String compName="SAPIENT";
+        static String tnrName;
+        int id;
+        Stting name;
+        void method(){
+            int loc;
+        }
+    }
+
+ _________   ________  Data-Type varName = [value/obj's reference]
+ [public]    [static]  
+ [private]   [final ]
+ [protected] [volatile]
+ [        ]  [transient]
+
+    -local variable-
+ -----------------------
+ - Nil-       [final]
+
+
+
+
+
+------------------------------
+6. constructor
+------------------------------
+
+in java, obj creation 2 step process
+
+step-1 : dynamic memory allocation   ==> 'new' keyword
+step-2 : initialze that memory obj's data ==> 'constructor'
+
+
+obj ==> new Constructor()
+
+
+
+_______    ClassName([args]) [throws] Exception{
+[private]
+[protected]
+[public]
+[      ]    // initialization logic
+
+           }
+
+
+
+
+
+
+------------------------------
+7. methods
+------------------------------
+
+                  
+
+ReturnType
+
+    - void
+    - primitive
+    - reference
+
+
+_______    _________ ReturnType methodName([args])[throws]Exception{
+[public]   [static]    
+[private]  [synchrnized] // A,R,L & Assignment
+[protected][strictfp]    // Conditional
+[      ]   [abstract]    // Looping
+[native]                 // Invoke other behav
+
+                    [return] [result]
+
+                    }   
+
+  
+
+
+
+------------------------------
+7. Interface
+------------------------------
+
+
+interface Name [extends] Interface1,Interface2{
+    // state ==> variables
+    public static final DataType varName=[value/object's ref];
+
+    // behav  ==> methods
+    public abstract ReturnType methodName([args])[throws]Exception;
+
+
+    // java-8
+    public static ReturnType  methodName([args])[throws]Exception{
+        //
+    }
+
+    public default ReturnType  methodName([args])[throws]Exception{
+        // 
+    }
+
+}
+
+
+
+------------------------------
+8. Enums
+------------------------------
+
+==> group of related constants
+
+enum Levels {
+    int v;
+    public Levels(int v){
+        this.v=v;
+    }
+    LEVEL1(10),LEVEL2(20)
+}
+
+s.o.p(Levels.LEVEL1)
+
+
+
+------------------------------
+9. annotations
+------------------------------
+
+public @interface Annotation{
+    //..
+}
+
+
+
+
+------------------------------
+10. Naming  Conventions in java
+------------------------------
+
+
+
+keywords   ===> lower-case
+package-names ==> lower-case
+types ( class | interface | enum | annotation ) ==> pascal-case    ( A____B____C____)
+var / method   ==> camel-case  _______B____C____
+constants     ==> upper-case
+
+---------------------------------------------------

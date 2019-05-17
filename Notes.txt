@@ -1,0 +1,44 @@
+
+
+why java 
+
+    -> can develope any type of apps
+
+------------------------------------------------------------
+features
+
+    -> easy to use
+    -> portable
+    -> distributed 
+    -> concurrent & parallel applications
+    
+------------------------------------------------------------
+
+how to run .java program ?
+
+    -> using JRE ( JVM )
+
+------------------------------------------------------------
+
+Java Environment :
+
+    development - envi 
+
+        - editor / IDE
+        - build tools  ( ANT,Maven,Gradle, SBT , Ivy , OSGI ...)
+        - compiler
+        - java lib 
+        - debugger
+        - tools
+
+    deloyment - envi     
+
+        - JRE
+
+------------------------------------------------------------    
+
+"Hello World"
+
+------------------------------------------------------------    
+
+

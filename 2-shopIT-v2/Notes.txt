@@ -1,0 +1,13 @@
+
+
+
+
+
+// billing  
+
+	- getTotalPrice(cart)
+
+
+// price-matrix   
+
+	- getPrice(item)
