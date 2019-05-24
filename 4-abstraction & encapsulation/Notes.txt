@@ -1,0 +1,68 @@
+
+
+
+how to implement abstraction & encapsulation in java ?
+
+
+	many ways
+	
+	==> access specifiers
+	==> accessor methods ( set & get )
+	==> using interface & class
+	
+	==> using design patterns 
+
+---------------------------------------------------------
+
+
+access specifiers
+-----------------
+
+	proj
+		|
+		|
+		|-- p1 ( A.java , B.java extends A.java, C.java )
+		|
+		|-- p2 ( D.java extends p1.A.java , E.java , )
+
+
+	
+			
+			---------------------------------------------------------
+			same-package                      | other-package
+			---------------------------------------------------------
+			same-type | sub-type | other-type | sub-type | other-type
+			---------------------------------------------------------
+	
+	private    Y        N           N              N           N
+	           Y        Y           Y              N           N
+	protected  Y        Y           Y              Y           N  
+	public     Y        Y           Y              Y           Y            
+	
+	
+	
+	
+---------------------------------------------------------
+
+
+access specifier
+	
+	==> using interface & class
+	
+	
+	e.g
+	
+	
+		wheel  : rotate()
+		
+		car    : move()   
+		
+		
+---------------------------------------------------------		
+	
+	
+	
+	
+	
+	
+	

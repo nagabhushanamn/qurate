@@ -1,0 +1,27 @@
+
+
+module
+-------	
+   
+   top-level    : Interface      ---> complete abstraction
+   middle-level : Abstract class --> partial abstraction
+   bottom-level : Class          --> complete implentation
+   
+   
+   
+   
+   
+   --------------------------------------------------------------
+   
+   Interface           vs    Asbtract-class
+   -----------------------------------------
+   
+   
+   immutable variables        immutable/mutable variables
+   no constructor             constructor
+   
+   only abstract methods       abstract/non abstract methods
+   
+   --------------------------------------------------------------
+   
+   						
