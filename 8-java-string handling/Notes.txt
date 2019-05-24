@@ -1,0 +1,31 @@
+
+
+-------------------------------------------------------------
+
+ java.lang.String
+ java.lang.StringBuffer
+ java.lang.StringBuilder
+ 
+ 
+ 
+ imp-note:
+ 
+ 
+ 	=> with/without 'new' operator can create string objects
+ 	=> by default, all string objects are immutable
+ 	
+ 	
+ 	
+------------------------------------------------------------- 	
+
+Q1:
+
+	SSN  ==>  "123-12-4234";
+	
+	
+	
+	
+	
+ 	
+ 	
+ 	
