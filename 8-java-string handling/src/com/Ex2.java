@@ -55,6 +55,10 @@ public class Ex2 {
 
 		int n = 123;
 		System.out.println(n);
+		
+		
+		System.out.println(Character.isDigit('2'));
+		
 
 	}
 

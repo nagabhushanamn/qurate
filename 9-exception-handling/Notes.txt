@@ -1,0 +1,40 @@
+
+
+
+Exception Handling
+--------------------
+
+
+==> un-expected program flow disturb
+
+
+reasons for exceptions:
+
+	--> invalid input
+	--> IO propblems
+	--> n/w problems
+	--> SQL exceptions
+	...........
+	
+	
+what happen if exception happen in Java appln?
+
+  ==>JRE will terminate process	
+  
+soln :
+
+	Handle exception(s) properly
+	
+	
+	what is mean by 'handle' ?
+	
+		=> react with friendly messages
+		=> log exception for future fix
+		=> re-throw exception to dependent module
+		=> release used external resources ( db connections , sockets , file streams ... )
+	
+	
+	
+	  
+	
+	
