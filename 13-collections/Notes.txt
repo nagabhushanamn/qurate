@@ -1,0 +1,147 @@
+
+
+
+data structures  & Algorithms
+-------------------------------
+
+
+	=> way to organize memory , to perform CRUDSS
+	
+	
+	types
+	-----
+	
+	1. primary    
+	
+	2. secondary
+	
+		a. linear
+			
+			- array
+			- linked-list
+			- stack
+			- queue
+			.....
+		
+		b. non-linear
+		
+			- tree
+			- graph
+			
+   ----------------------------------------------
+   
+   limitations of array
+   
+   
+   ==> fixed size
+   ==> insertion/deletion oprs are slow
+   
+   	soln:
+   	
+   	=> linkedlist	
+   		
+   
+   -------------------------------------------------------------------
+   
+   
+   java : collections (s )
+   ------------------------
+   
+  	==> ready-made secondary data structures from java community
+  	
+  	
+  	
+  	https://docs.oracle.com/javase/tutorial/collections/intro/index.html
+  
+  
+   
+   -------------------------------------------------------------------
+   
+   types of collections
+   
+   
+    1. list
+    
+        --> ordered output
+        --> index based
+        --> holds duplicate data-elements if required
+        
+    2. set
+    
+    	--> No index
+    	--> unique data elements
+    	
+    3. map
+    
+    	--> key/identity + data-element
+    	
+    	
+  -----------------------------------------------------------  
+  
+  
+  collection f.w classes	 	
+  
+  
+  
+  a. list
+  
+  		-> Vector     ( array )  --> thread-safe  / sync 
+  		-> ArrayList  ( array )
+  		-> LinkedList ( DLL   )
+  		-> Stack extends Vector
+    	    
+    	    
+   b. set
+   
+   		- TreeSet   ( b-tree )    --> sorted
+   		- HashSet   ( hashtable ) --> un-ordered 
+   		- LinkedHashSet ( DLL + hashtable ) 	--> ordered    
+   
+   
+   	    
+    	    
+   c. map
+   
+   		- TreeMap   ( b-tree )    --> sorted
+   		- HashMap   ( hashtable ) --> un-ordered 
+   		- LinkedHashMap ( DLL + hashtable ) 	--> ordered  
+   		
+   		
+   	d. Queue	
+   		
+   		  
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   			
+
+
+   
