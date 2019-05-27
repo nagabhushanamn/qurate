@@ -1,0 +1,12 @@
+
+
+
+steps to create new thread 
+---------------------------
+
+
+step-1 : create instance of 'Thread' class
+step-2 : assign work to thread with 'Runnable' object
+step-3 : start new thread , i.e create new 'stack'
+step-4 : can manage thread life-cycles'
+

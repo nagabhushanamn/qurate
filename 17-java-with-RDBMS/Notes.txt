@@ -1,0 +1,63 @@
+
+
+
+s/w
+
+
+	application   + datasource
+	
+	
+	==> application : processing logic
+	==> datasource  : persisting logic
+	
+	
+		datasource
+		
+			- file
+			- SQL
+			- NoSQL
+			- ......
+	
+	---------------------------------------
+	
+	
+	application     --> object model
+	
+	SQL datasource  --> relational model
+	
+	---------------------------------------
+	
+	Object Relation Mapping ( ORM )
+	
+	
+	how to implement ORM in java language ?
+	
+	
+		==> JDBC Api ( java.sql.* )
+		
+		
+	---------------------------------------
+	
+	
+	
+	basic steps to use JDBC API ?
+	
+	
+	step-1 : register db driver with jdbc-API
+	step-2 : create db connection with URL , username and password
+	step-3 : create statements with SQL 
+	step-4 : execute statements & process results
+	step-5 : manage transactios if required
+	step-6 : close connection
+	
+	
+	---------------------------------------
+		
+	
+	
+	
+	
+	
+	
+	 
+	

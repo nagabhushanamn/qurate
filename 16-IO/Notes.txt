@@ -1,0 +1,68 @@
+
+
+
+   Input/Output sources
+   -----------------------
+   
+   
+   - std input/output
+   - file
+   - n/w sockets
+   
+   
+   types of input/output
+   ---------------------
+   
+   - 8-bit / byte
+   - 16-bit / character
+   
+   
+   how to do IO operation in java ?
+   -----------------------------------
+   
+   
+   input-source --------------->  java-program
+                   inputstream    
+                   
+                   
+   outpu-source <---------------  java-program
+                   outputstream    
+                   
+   ------------------------------------------------------
+   
+   java.io.*;
+   
+   
+   		InputStream
+   		OutputStream
+   		
+   		Reader
+   		Writer
+   		
+   		
+   		source : file
+   		
+   					FileInputStream
+   					FileOutputStream
+   					
+   					FileReader
+   					FileWriter
+   		
+   		
+   					---
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+                   
+                   
+                   
+                   

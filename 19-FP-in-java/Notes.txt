@@ -1,0 +1,112 @@
+
+
+
+Predicate<Product> predicate = new Predicate<Product>() {
+			@Override
+			public boolean test(Product t) {
+				return t.getPrice() == price;
+			}
+		};
+		
+		
+		|
+		|
+		|
+		|
+		V
+		
+		
+		
+Predicate<Product> predicate =
+			public boolean test(Product t) {
+				return t.getPrice() == price;
+			}
+	
+	
+		|
+		|
+		|
+		|
+		V
+		
+		
+		
+Predicate<Product> predicate =
+			 boolean test(Product t) {
+				return t.getPrice() == price;
+			}
+			
+			
+		|
+		|
+		|
+		|
+		V
+			
+			
+			
+Predicate<Product> predicate =
+			  test(Product t) {
+				return t.getPrice() == price;
+			}
+			
+					
+		|
+		|
+		|
+		|
+		V
+		
+// function in java / Lambda expressions
+			
+Predicate<Product> predicate =
+			  (Product t) -> {
+				return t.getPrice() == price;
+			}
+		
+		
+					
+		|
+		|
+		|
+		|
+		V	
+			
+			
+			
+Predicate<Product> predicate =
+			  (t) -> {
+				return t.getPrice() == price;
+			}
+		
+		
+		
+					
+		|
+		|
+		|
+		|
+		V	
+				
+				
+				
+Predicate<Product> predicate =
+			  t -> {
+				return t.getPrice() == price;
+			}
+		
+		
+						
+		|
+		|
+		|
+		|
+		V	
+			
+			
+				
+				
+Predicate<Product> predicate =
+			  t -> t.getPrice() == price;
+			
+			
